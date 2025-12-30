@@ -1,5 +1,5 @@
 from network_security.components.data_ingestion import DataIngestion
-#from network_security.components.data_validation import DataValidation
+from network_security.components.data_validation import DataValidation
 #from network_security.components.data_transformation import DataTransformation
 from network_security.exception.exception import NetworkSecurityException
 from network_security.logging.logger import logging
