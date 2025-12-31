@@ -26,7 +26,7 @@ class NetworkDataExtract():
         
     def csv_to_json_convertor(self,file_path):
         try:
-            data=pd.read_csv(file_path)
+            data=pd.read_csv(file_path,sep='\t')
             data.reset_index(drop=True,inplace=True)
             records=list(json.loads(data.T.to_json()).values())
             return records
